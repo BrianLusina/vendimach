@@ -9,12 +9,13 @@ export default class Product extends Entity<ProductParams> {
     }
 
     public static create(props: ProductParams, id?: EntityId): Product {
-        const { name, price, type, createdOn, updatedOn, deletedOn } = props;
+        const { name, price, quantity, type, createdOn, updatedOn, deletedOn } = props;
         return new Product(
             {
                 name,
                 price,
                 type,
+                quantity,
                 createdOn: createdOn || new Date(),
                 updatedOn: updatedOn || new Date(),
                 deletedOn,
