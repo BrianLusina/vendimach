@@ -1,0 +1,7 @@
+{
+  "version": "3",
+  "redirects": {
+    "https://deno.land/x/nanoid/mod.ts": "https://deno.land/x/nanoid@v3.0.0/mod.ts"
+  },
+  "remote": {}
+}

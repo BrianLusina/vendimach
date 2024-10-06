@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@adapters/*": ["shared/core/src/lib/adapters/*"],
+      "@apnClient": ["libs/infra/src/lib/pnClient/ios/index.ts"],
+      "@cacheClient": ["libs/infra/src/lib/cache/index.ts"],
+      "@redisClient": ["libs/infra/src/lib/redis/index.ts"],
+      "@config": ["shared/config/src/index.ts"],
+      "@core": ["core/src/index.ts"],
+      "@datasource": ["libs/infra/src/lib/database/db/Datasource.ts"],
+      "@di/*": ["shared/config/src/lib/di/*"],
+      "@envConfig": ["shared/config/src/lib/env/index.ts"],
+      "@dbClient": ["libs/infra/src/lib/database/DatabaseClient.ts"],
+      "@postgresDbClient": ["libs/infra/src/lib/database/postgres/index.ts"],
+      "@mongoDbClient": ["libs/infra/src/lib/database/mongodb/index.ts"],
+      "@domain": ["shared/domain/src/lib/index.ts"],
+      "@entities": ["shared/core/src/lib/entities/index.ts"],
+      "@fcmPnClient": ["libs/infra/src/lib/pnClient/fcm/index.ts"],
+      "@infra": ["libs/infra/src/index.ts"],
+      "@kafka": ["libs/infra/src/lib/messaging/kafka/index.ts"],
+      "@kafkaConsumerClient": [
+        "libs/infra/src/lib/messaging/kafka/KafkaConsumerClient.ts"
+      ],
+      "@kafkaProducerClient": [
+        "libs/infra/src/lib/messaging/kafka/KafkaProducerClient.ts"
+      ],
+      "@kvDbClient": ["libs/infra/src/lib/database/kvdb/index.ts"],
+      "@logger": ["libs/infra/src/lib/logger/index.ts"],
+      "@pnClient": ["libs/infra/src/lib/pnClient/index.ts"],
+      "@rabbitMqClient": ["libs/infra/src/lib/messaging/rabbitmq/index.ts"],
+      "@restClient": ["libs/infra/src/lib/restclient/index.ts"],
+      "@server": ["libs/infra/src/lib/server/index.ts"],
+      "@telemetry": ["libs/telemetry/src/index.ts"],
+      "@utils": ["libs/utils/src/index.ts"],
+      "@database": ["shared/database/src/index.ts"],
+      "@services": ["libs/services/src/index.ts"],
+      "@testUtils": ["libs/test-utils/src/index.ts"],
+      "@apps/*": ["apps/*"]
+    }
+  }
+}
