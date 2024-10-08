@@ -1,6 +1,6 @@
-import { EntityId } from "../../../../core/src/index.ts";
-import { UseCase } from "../../../../core/src/lib/ports/index.ts";
-import { Amount } from "../../../entities/shared/index.ts";
+import { EntityId } from "../../../../../core/src/index.ts";
+import { UseCase } from "../../../../../core/src/lib/ports/index.ts";
+import { Amount } from "../../../../entities/shared/index.ts";
 
 type PayForProductsParams = {
     money: Amount;

@@ -1,8 +1,8 @@
-import { EntityId } from "../../../../core/src/index.ts";
-import { UseCase } from "../../../../core/src/lib/ports/index.ts";
-import { ProductType } from "../../../entities/product/Product.params.ts";
-import Product from "../../../entities/product/index.ts";
-import { Amount } from "../../../entities/shared/index.ts";
+import { EntityId } from "../../../../../core/src/index.ts";
+import { UseCase } from "../../../../../core/src/lib/ports/index.ts";
+import { ProductType } from "../../../../entities/product/Product.params.ts";
+import Product from "../../../../entities/product/index.ts";
+import { Amount } from "../../../../entities/shared/index.ts";
 
 type AddProductRequestParams = {
     name: string;

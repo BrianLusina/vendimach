@@ -1,8 +1,8 @@
-import { EntityId } from "../../../../core/src/index.ts";
-import { CommonRequestParams } from "../../../../core/src/lib/ports/Params.d.ts";
-import { UseCase } from "../../../../core/src/lib/ports/index.ts";
-import { ProductType } from "../../../entities/product/Product.params.ts";
-import Product from "../../../entities/product/index.ts";
+import { EntityId } from "../../../../../core/src/index.ts";
+import { CommonRequestParams } from "../../../../../core/src/lib/ports/Params.d.ts";
+import { UseCase } from "../../../../../core/src/lib/ports/index.ts";
+import { ProductType } from "../../../../entities/product/Product.params.ts";
+import Product from "../../../../entities/product/index.ts";
 
 type GetAllProductsParams = {
     /**

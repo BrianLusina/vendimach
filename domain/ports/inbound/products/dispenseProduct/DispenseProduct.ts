@@ -1,6 +1,6 @@
-import { EntityId } from "../../../../core/src/index.ts";
-import { UseCase } from "../../../../core/src/lib/ports/index.ts";
-import Product from "../../../entities/product/index.ts";
+import { EntityId } from "../../../../../core/src/index.ts";
+import { UseCase } from "../../../../../core/src/lib/ports/index.ts";
+import Product from "../../../../entities/product/index.ts";
 
 type DispenseProductRequestParams = {
     productId: EntityId;
