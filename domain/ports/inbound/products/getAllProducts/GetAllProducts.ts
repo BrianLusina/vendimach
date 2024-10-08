@@ -3,6 +3,7 @@ import { CommonRequestParams } from "../../../../../core/src/lib/ports/Params.d.
 import { UseCase } from "../../../../../core/src/lib/ports/index.ts";
 import { ProductType } from "../../../../entities/product/Product.params.ts";
 import Product from "../../../../entities/product/index.ts";
+import { ProductRepository } from '../../../outbound/repositories/index.ts';
 
 type GetAllProductsParams = {
     /**
@@ -17,8 +18,13 @@ type GetAllProductsParams = {
 } & CommonRequestParams;
 
 export default class GetAllProducts implements UseCase<GetAllProductsParams, Product[]> {
+    protected productRepository: ProductRepository;
 
-    execute(params?: GetAllProductsParams | undefined): Product[] | Promise<Product[]> {
+    constructor(productRepository: ProductRepository) {
+        this.productRepository = productRepository;
+    }
+
+    execute(params?: GetAllProductsParams): Product[] | Promise<Product[]> {
         throw new Error("Method not implemented.");
     }
 }
