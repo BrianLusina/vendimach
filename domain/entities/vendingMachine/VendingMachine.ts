@@ -3,7 +3,7 @@ import { Entity, EntityId } from "../../../core/src/index.ts";
 import Rack from "../rack/Rack.entity.ts"
 import VendingState from "../state/VendingState.ts";
 
-export default class VendingMachine extends Entity<VendingMachineParams> {
+export default class VendingMachine extends Entity<VendingMachineParams> {   
     private readonly allRacks: Rack[];
     private readonly currentState: VendingState;
 
@@ -35,6 +35,10 @@ export default class VendingMachine extends Entity<VendingMachineParams> {
 
     get racks(): Rack[] {
         return this.allRacks;
+    }
+
+    get state(): VendingState {
+        return this.currentState;
     }
 
 }
